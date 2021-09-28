@@ -1,0 +1,445 @@
+*{  
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+
+
+
+
+
+#header{
+    width:100%;
+    height:70px;
+    background-color: rgb(130, 132, 153);
+    
+}
+
+
+#nav_links{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#nav_links li {
+   list-style-type: none;
+   padding:20px;
+}
+#nav_links li a {
+    padding:10px;
+    color:white;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+#close{
+    display:none
+}
+#menu{
+    display:none;
+}
+
+#nav_links li a:hover{
+     
+      color:red;
+      border:3px solid lightcyan;
+      background-color: black;
+      border-radius:5px;
+
+}
+
+#main_content{
+    background-image: url(./images/laney-smith-FwNUSwJDZIQ-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+    height:70vh;
+    display:flex;
+   
+   
+   
+}
+
+#content{
+    width:100%;
+    padding-top:100px;
+    height:50%;
+    color:rgb(161, 10, 10);
+    padding-left:10%;
+   
+}
+
+#avatar{
+    padding-top:100px;
+    padding-right:50px;
+}
+#img{
+ 
+    border-top-left-radius:100px;
+    border-bottom-right-radius:50px;
+   
+}
+#name{
+    font-size: 40px;
+    margin-left:10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style:italic;
+    color:goldenrod;
+    font-weight:bold;
+    opacity:0;
+    transition:all 3s ease-in;
+    
+    
+}
+
+#name.show{
+    opacity:1;
+}
+
+
+#web{
+    
+    font-size: 30px;
+    color:white;
+   
+}
+
+
+
+#about{
+    width:100%;
+    font-size:1.5rem;
+    height:auto;
+    padding:2rem 0 2rem 0;
+    background-color:whitesmoke;
+    
+
+}
+
+#about_content{
+    margin:0 auto;
+    text-align: center;
+    width:95vw;
+    height:auto;
+    padding:2rem 0 2rem 0;
+    background-color: rgb(77, 65, 65);
+    border-radius:10px;
+   
+
+}
+#about_heading{
+  color:rgb(22, 5, 5);
+  text-align: center;
+
+}
+#heading{
+    color:salmon;
+    margin:20px;
+}
+#about_content p{
+    color:white;
+    margin:20px;
+}
+
+.skills{
+    width:100%;
+    height:auto;
+    padding:30px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:0 30px;
+}
+#skills h2{
+    padding-top:40px;
+    color:rgb(241, 75, 75)
+}
+.html{
+    width:30%;
+    
+   
+    
+
+}
+
+
+#html{
+    width:90%;
+    height:2rem;
+    background-color: chartreuse;
+    border-radius:10px;
+    display:inline-block;
+}
+#html span{
+    display:none;
+    
+}
+#html:hover{
+    width:70%;
+}
+#html:hover span{
+    display:block;
+    color:red;
+    font-size: 1.4rem;
+    padding:0 45%;
+}
+
+
+
+
+
+
+.contact_bg{
+   height:auto;
+   padding:3rem 0 3rem 0;
+}
+
+#contact_subject{
+    padding:3rem 0 3rem 0;
+}
+
+#footer{
+    width:100%;
+    height:auto;
+    padding: 3rem 0 3rem 0;
+    background-color:rgb(241, 225, 225);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#icons img{
+    margin-right:30px;
+    opacity:0.5;
+  
+}
+#icons img:hover{
+ 
+   
+    opacity:1;
+}
+
+#social_media{
+    color:rgb(13, 24, 27);
+    padding-bottom:20px;
+    font-size:30px;
+}
+
+@media screen and (min-width:200px) and (max-width:480px){
+
+    *{
+        font-size: .4rem;
+        margin:0px;
+        padding:0px;
+    }
+
+    #header{
+        height:50px;
+        max-width:100%;
+       
+    }
+   
+  #nav_links{
+      display:none;
+  }
+  #about{
+      width:100vw;
+      height:auto;
+      background-color: bisque;
+      padding:1rem 0 1rem 0;
+     
+
+  }
+
+  #about_heading{
+      margin:0px;
+      text-align:center;
+      color:white;
+  }
+  
+  #about_content{
+    text-align:center;
+    padding:1rem 0 1rem 0;
+    height:auto;
+    
+   
+}
+
+#about_heading #heading{
+    margin:0px;
+    padding:0px;
+    color:cornsilk;
+    text-align: center;
+}
+
+#about_content #matter{
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+#main_content #content h2{
+    text-align: center;
+}
+  
+
+ #contact_heading{
+     
+     text-align:center;
+   
+ }
+
+.skills{
+    display:flex;
+    width:90vw;
+    flex-direction: column;
+    height:auto;
+    align-items: flex-start;
+    padding: 2rem 0 2rem 0;
+}
+
+#left_contact{
+    width:100%;
+}
+#right_contact{
+    width:100%;
+}
+#nav_links{
+    position:absolute;
+    display:block;
+    background-color: black;
+    height:90vh;
+    width:200px;
+    top:0px; 
+    right:-200px;
+
+  }
+  
+  #nav_links li{
+      display:block;
+      text-align:center;
+      width:100%;
+      height:100px;
+    
+      
+  }
+  #close{
+      display:block;
+      color:white;
+      padding: 20px; 
+      font-size:20px;   
+  }
+
+#menu{
+       
+    display:block;
+    float:right;
+    padding:20px 0px 20px 30px;
+    color:white;
+    margin-right: 50px;
+    font-size:20px;
+}
+
+
+.html{
+    width:100%;
+}
+
+}
+
+
+
+ @media screen and (min-width:480px) and (max-width:800px){
+    #nav_links{
+      position:absolute;
+      display:block;
+      background-color: black;
+      height:90vh;
+      width:200px;
+      top:0px; 
+      right:-200px;
+
+    }
+    
+    #nav_links li{
+        display:block;
+        text-align:center;
+        width:100%;
+        height:100px;
+      
+        
+    }
+    #close{
+        display:block;
+        color:white;
+        padding: 20px;    
+    }
+
+    #menu{
+       
+        display:block;
+        float:right;
+        padding:30px 0px 30px 30px;
+        color:white;
+        margin-right: 50px;
+    }
+
+    #nav_links li a:hover{
+          padding:10px;
+          color:black;
+          border-radius: 5px;
+          background-color: white;
+          font-weight:20px;
+          
+
+    }
+    #about{
+        background-color: darkcyan;
+        padding-top:1rem;
+        height:auto;
+        padding-bottom:1rem;
+    }
+    #about_content{
+        
+        text-align:center;
+    }
+
+
+    
+    #about_heading{
+       text-align:center;
+       margin:0px;
+    }
+    #contact_heading{
+        
+        text-align:center;
+      
+    }
+
+
+    .skills{
+        display:flex;
+        flex-direction: column;
+        height:auto;
+        align-items: flex-start;
+    }
+    .html{
+        width:100%;
+    }
+
+   
+}
+
+@media screen and  (min-width:800px) and (max-width:1024px){
+   .skills{
+       width:100%;
+
+   }
+   .skills div{
+       width:90%;
+   }
+}
