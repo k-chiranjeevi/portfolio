@@ -58,31 +58,27 @@ body{
     background-image: url(./images/laney-smith-FwNUSwJDZIQ-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    width:100%;
-    height:70vh;
+    width:90vw;
+    height:80vh;
     display:flex;
-   
-   
-   
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px auto 0px auto;
+    opacity: 0.9;
+    border-radius:10px;
 }
 
-#content{
-    width:100%;
-    padding-top:100px;
-    height:50%;
-    color:rgb(161, 10, 10);
-    padding-left:10%;
-   
+
+#content h2{
+    color:red;
 }
 
-#avatar{
-    padding-top:100px;
-    padding-right:50px;
-}
 #img{
  
-    border-top-left-radius:100px;
-    border-bottom-right-radius:50px;
+    border-top-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:20px;
+    border-top-right-radius:20px;
    
 }
 #name{
@@ -113,59 +109,72 @@ body{
 
 
 #about{
-    width:100%;
+    width:90vw;
+    border-radius:7px;
     font-size:1.5rem;
     height:auto;
-    padding:2rem 0 2rem 0;
+    padding:1rem 0 2rem 0;
     background-color:whitesmoke;
-    
+    margin: 10px auto;
 
 }
 
 #about_content{
     margin:0 auto;
-    text-align: center;
-    width:95vw;
+    z-index:1;
+    width:90%;
     height:auto;
-    padding:2rem 0 2rem 0;
-    background-color: rgb(77, 65, 65);
+    padding:0.5rem 0 1rem 0 ;
+    background-color: rgb(236, 200, 166);
     border-radius:10px;
    
 
 }
 #about_heading{
-  color:rgb(22, 5, 5);
+  color:rgb(19, 15, 15);
   text-align: center;
 
 }
 #heading{
-    color:salmon;
+    color:rgba(10, 22, 8, 0.87);
     margin:20px;
 }
 #about_content p{
-    color:white;
+    color:rgb(15, 17, 2);
     margin:20px;
 }
+#about_matter{
+    color:rgb(201, 9, 67) !important;
+    font-weight: bolder;
+    font-size:30px;
+}
 
-.skills{
-    width:100%;
+
+#skills{
+    width:90vw;
     height:auto;
-    padding:30px;
+    background-color: rgb(157, 229, 241);
+    margin:10px auto;
+    border-radius: 10px;
+    padding:1rem 0 2rem 0;
+}
+.skills{
+    width:90%;
     display:flex;
     justify-content: space-around;
     align-items: center;
-    margin:0 30px;
+   
+    margin:0 auto;
 }
+
 #skills h2{
     padding-top:40px;
     color:rgb(241, 75, 75)
 }
 .html{
-    width:30%;
+    width:30vw;
+  
     
-   
-    
-
 }
 
 
@@ -282,6 +291,11 @@ body{
     font-size: 1rem;
     line-height: 1.4rem;
 }
+#main_content{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 #main_content #content h2{
     text-align: center;
 }
@@ -293,12 +307,18 @@ body{
    
  }
 
+#skills{
+    width:90vw;
+    background-color: coral;
+}
+
 .skills{
     display:flex;
     width:90vw;
     flex-direction: column;
+    justify-content: center;
     height:auto;
-    align-items: flex-start;
+    align-items: center;
     padding: 2rem 0 2rem 0;
 }
 
@@ -345,9 +365,7 @@ body{
 }
 
 
-.html{
-    width:100%;
-}
+
 
 }
 
@@ -397,6 +415,11 @@ body{
           
 
     }
+    #main_content{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
     #about{
         background-color: darkcyan;
         padding-top:1rem;
@@ -420,15 +443,24 @@ body{
       
     }
 
-
+    #skills{
+        width:95vw;
+        background-color: coral;
+    } 
+     #skills h2{
+         color:white;
+     }
     .skills{
         display:flex;
-        flex-direction: column;
         height:auto;
-        align-items: flex-start;
+        width:90vw;
+        margin: auto;
+        justify-content: space-around;
+        padding-top:20px;
+        
     }
     .html{
-        width:100%;
+        width:300px;
     }
 
    
